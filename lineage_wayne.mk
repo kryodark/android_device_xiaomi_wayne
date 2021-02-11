@@ -25,6 +25,18 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Inherit from wayne device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Boot Animation Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# FaceUnlock Sector
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Sakura build type
+SAKURA_OFFICIAL := true
+
+# Maintainer Sector
+SAKURA_MAINTAINER := Markdarkness🐺
+
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := wayne
 PRODUCT_MANUFACTURER := Xiaomi
@@ -36,6 +48,6 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 TARGET_VENDOR_PRODUCT_NAME := wayne
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="wayne-user 8.1.0 OPM1.171019.011 V9.5.11.0.ODCCNFA release-keys"
+    PRIVATE_BUILD_DESC="wayne-user 9 PKQ1.180904.001 V10.3.4.0.PDCCNXM release-keys"
 
 BUILD_FINGERPRINT := xiaomi/wayne/wayne:8.1.0/OPM1.171019.011/V9.5.11.0.ODCCNFA:user/release-keys
